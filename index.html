@@ -27,11 +27,33 @@
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
   </header>
-
   <!-- Hero Section -->
   <section class="hero">
+    <!-- Animated stars -->
+    <div class="star" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+<div class="star" style="top: 25%; left: 70%; animation-delay: 1s;"></div>
+<div class="star" style="top: 45%; left: 50%; animation-delay: 2s;"></div>
+<div class="star" style="top: 65%; left: 30%; animation-delay: 0.5s;"></div>
+<div class="star" style="top: 80%; left: 85%; animation-delay: 1.5s;"></div>
+
+<!-- More stars -->
+<div class="star" style="top: 15%; left: 40%; animation-delay: 0.8s;"></div>
+<div class="star" style="top: 35%; left: 15%; animation-delay: 1.3s;"></div>
+<div class="star" style="top: 55%; left: 75%; animation-delay: 2.5s;"></div>
+<div class="star" style="top: 70%; left: 60%; animation-delay: 0.2s;"></div>
+<div class="star" style="top: 85%; left: 25%; animation-delay: 1.7s;"></div>
+
+<div class="star" style="top: 5%; left: 80%; animation-delay: 0.9s;"></div>
+<div class="star" style="top: 50%; left: 10%; animation-delay: 1.1s;"></div>
+<div class="star" style="top: 60%; left: 90%; animation-delay: 2.2s;"></div>
+<div class="star" style="top: 75%; left: 45%; animation-delay: 0.4s;"></div>
+<div class="star" style="top: 90%; left: 55%; animation-delay: 1.8s;"></div>
+
+  
+    <!-- Content -->
     <div class="hero-content">
-      <div class="welcome"><h1>Welcome to Diamond Company</h1>
+      <div class="welcome">
+        <h1>Welcome to Diamond Company</h1>
       </div>
       <div class="product-count">
         <span>55</span>
@@ -45,17 +67,52 @@
                    a 15.9155 15.9155 0 0 1 0 31.831
                    a 15.9155 15.9155 0 0 1 0 -31.831" />
         </svg>
-      </div>
-      <p class="onestop">Your One-Stop Brand for Innovation, Passion & Business Excellence</p>
-      <a href="#portfolio" class="btn-primary">Explore Our Business</a>
+      </div><br><br><br>
+      <p style="color: white;">Your One-Stop Brand for Innovation, Passion & Business Excellence</p>
     </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="section">
     <div class="search-container">
       <input type="text" id="searchBar" placeholder="Search for products...🔍" class="search-bar">
     </div>
+    
+  </section>
+  
+
+  <!-- SVG Wave Separator -->
+  <svg class="wave-separator" viewBox="0 0 1440 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="waveGradient" gradientTransform="rotate(15)">
+        <stop offset="0%" stop-color="#2e026d" />
+        <stop offset="50%" stop-color="#8e44ad" />
+        <stop offset="100%" stop-color="#ff5e99" />
+      </linearGradient>
+    </defs>
+  
+    <!-- Cream background below the wave -->
+    <rect width="1440" height="150" y="0" fill="#ADBBDA" />
+  
+    <!-- Wave on top of the cream -->
+    <path fill="url(#waveGradient)" d="
+      M0,100
+      C72,50 72,50 144,100
+      C216,150 216,50 288,100
+      C360,150 360,50 432,100
+      C504,150 504,50 576,100
+      C648,150 648,50 720,100
+      C792,150 792,50 864,100
+      C936,150 936,50 1008,100
+      C1080,150 1080,50 1152,100
+      C1224,150 1224,50 1296,100
+      C1368,150 1368,50 1440,100
+      L1440,0 L0,0 Z" />
+  </svg>
+  
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+
+    
+
     <h2 class="section-title">Our Products</h2>
     <div class="card-grid">
 
