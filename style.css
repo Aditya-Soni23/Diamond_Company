@@ -183,10 +183,6 @@ h1, h2, h3 {
 
 
 /* Cards */
-
-  /* Styling the Search Bar Container */
-/* Styling the Search Bar Container */
-/* Styling the Search Bar Container */
 .search-container {
     position: relative; /* Set relative positioning to allow absolute positioning of child elements */
     display: flex;
@@ -370,7 +366,7 @@ h1, h2, h3 {
   fill: none;
   stroke: lime;
   stroke-width: 3.8;
-  stroke-dasharray: 55, 100;
+  stroke-dasharray: 56, 100;/* change product count meter here*/
 }
 
 .wave-separator {
