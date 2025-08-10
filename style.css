@@ -410,4 +410,46 @@ h1, h2, h3 {
     position: relative;
     z-index: 1;
   }
-  
+
+
+
+
+
+
+
+  .downloadapp {
+    background-color: #000;
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Button styling */
+  .download-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFD700; /* Gold color */
+    background: linear-gradient(145deg, #000, #000);
+    border: 2px solid #FFD700;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    transition: all 0.4s ease;
+  }
+
+  /* Hover effect: gold shine */
+  .download-btn:hover {
+    color: black;
+    background: linear-gradient(145deg, #FFD700, #FFA500);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.6);
+    transform: scale(1.05);
+  }
+
+  /* Active click effect */
+  .download-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+  }
