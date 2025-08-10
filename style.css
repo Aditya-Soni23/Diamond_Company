@@ -319,15 +319,40 @@ h1, h2, h3 {
     color: #3D52A0;
 }
 
-.welcome h1 {
-    font-size: 3rem; /* Adjust the font size */
-    color: black; /* White text color */
-    padding: 0.8rem 2.5rem; /* Padding for height and width */
-    border-radius: 25px; /* Rounded corners */
-    font-weight: bold;
-    display: inline-block; /* Ensures the background is only as wide as the text + padding */
 
+.welcome h1 {
+  font-size: 3rem;
+  color: black; /* Default text color */
+  padding: 0.8rem 2.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  overflow: hidden; /* Hide shine outside */
 }
+
+.welcome h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%; /* Start outside */
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255, 215, 0, 0.8) 50%,
+      transparent 100%
+  );
+  animation: shine 3s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { left: -50%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
  .product-count {
   position: absolute; /* important */
   width: 60px;
