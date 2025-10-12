@@ -391,7 +391,7 @@ h1, h2, h3 {
   fill: none;
   stroke: lime;
   stroke-width: 3.8;
-  stroke-dasharray: 56, 100;/* change product count meter here*/
+  stroke-dasharray: 60, 100;/* change product count meter here*/
 }
 
 .wave-separator {
